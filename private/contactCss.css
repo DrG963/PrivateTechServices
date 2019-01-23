@@ -1,0 +1,85 @@
+html {
+  background: url("./pics/contactBack.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  z-index:-5;
+}
+#middleMe{
+  z-index: -4;
+  position: absolute;
+  width:30%;
+  height:30%;
+  top:35%;
+  left:35%;
+}
+#middleMe img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -4;
+}
+#topper{
+  position: absolute;
+  z-index: -4;
+  width:100%;
+  height:20%;
+  top: 7.5%;
+  left:0%;
+  background-color: black;
+  color:white;
+  text-align: center;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  overflow:scroll;
+  overflow-x: hidden;
+}
+#homer{
+  position: absolute;
+  z-index: -4;
+  width:25%;
+  height:20%;
+  bottom:7.5%;
+  left:37.5%;
+}
+#homer img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -4;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #129cb7;
+    border-radius: 3.5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+@media only screen and (max-width: 1200px) {
+    #topper {
+        font-size: 25px;
+    }
+}
