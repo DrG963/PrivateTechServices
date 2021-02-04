@@ -8,6 +8,14 @@ html {
   overflow: hidden;
   z-index:-5;
 }
+body{
+  position: absolute;
+  height:100%;
+  width:100%;
+  left:0;
+  top:0;
+  overflow-y:scroll;
+}
 #middleMe{
   z-index: -4;
   position: absolute;
@@ -29,8 +37,8 @@ html {
   position: absolute;
   z-index: -4;
   width:100%;
-  height:20%;
-  top: 7.5%;
+  height:26%;
+  top: 6%;
   left:0%;
   background-color: black;
   color:white;
@@ -41,15 +49,15 @@ html {
   overflow:scroll;
   overflow-x: hidden;
 }
-#homer{
-  position: absolute;
+.homer{
+  position: relative;
   z-index: -4;
   width:25%;
   height:20%;
-  bottom:7.5%;
+  margin-bottom:20px;
   left:37.5%;
 }
-#homer img{
+.homer img{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -82,4 +90,142 @@ html {
     #topper {
         font-size: 25px;
     }
+}
+.form{
+  position: relative;
+  width:100%;
+  left:0;
+  height:auto;
+}
+.form form{
+  position: relative;
+  width:90%;
+  left:5%;
+  height:auto;
+}
+.form form input{
+  position: relative;
+  height:50px;
+  font-size:20px;
+  padding-left:15px;
+  line-height: 50px;
+  display: block;
+  margin-top:15px;
+  margin-bottom: 15px;
+  width:80%;
+  left:10%;
+}
+.text-xs-center {
+        text-align: center;
+    }
+
+    .g-recaptcha {
+        display: inline-block;
+    }
+    #submit{
+      color: #444444;
+          padding: 5px 10px;
+          border-radius: 2px;
+          font-weight: bold;
+          font-size: 17px;
+          outline: none;
+          color: white;
+        background: #4C8FFB;
+        border: 1px #3079ED solid;
+        box-shadow: inset 0 1px 0 #80B0FB;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #submit:hover {
+        border: 1px #2F5BB7 solid;
+        box-shadow: 0 1px 1px #EAEAEA, inset 0 1px 0 #5A94F1;
+        background: #3F83F1;
+    }
+    #submit:active {
+        box-shadow: inset 0 2px 5px #2370FE;
+    }
+    .fitMiddle{
+      padding-top:12px;
+      font-size: 25px;
+      font-weight:700;
+      width:100%;
+      left:0;
+      text-align: center;
+      height:auto;
+    }
+.success {
+  position: relative;
+  background-color:black;
+  padding:8px;
+  border-radius:10px;
+  color:white;
+  width:auto;
+  display: inline-block;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+.contactID{
+  position: relative;
+  margin-top:15px;
+  width:auto;
+  height: 50px;
+  font-size:35px;
+  background-color:black;
+  color:#FF0000;
+  border:3px solid white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width:70%;
+  padding:10px;
+  line-height: 50px;
+  border-radius:18px;
+}
+.contactID a{
+  color:#FF0000;
+  text-decoration-color: blue;
+}
+.contactID a:visited{
+  color:#FF0000;
+  text-decoration-color: white;
+}
+.contactIDMobile{
+  position: relative;
+  margin-top:15px;
+  width:auto;
+  height: auto;
+  font-size:25px;
+  background-color:black;
+  color:#FF0000;
+  border:3px solid white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width:70%;
+  padding:15px;
+  line-height: 50px;
+}
+.contactIDMobile a{
+  color:#FF0000;
+  text-decoration-color: blue;
+}
+.contactIDMobile a:visited{
+  color:#FF0000;
+  text-decoration-color: white;
 }

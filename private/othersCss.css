@@ -8,13 +8,18 @@ html {
   overflow: hidden;
   z-index:-5;
 }
-#topper{
-  position: absolute;
-  width:50%;
-  height:15%;
-  top:2%;
-  left:25%;
-  background-color: rgb(38, 87, 165,0.7);
+h1{
+  position: relative;
+  top:10px;
+  text-align: center;
+  display: block;
+  font-size:30px;
+  margin-left: auto;
+  margin-right: auto;
+  color:white;
+  font-weight: 650;
+  text-shadow: 2px 2px blue;
+  letter-spacing: 1.3px;
 }
 .imgGood img{
   position: absolute;
@@ -73,4 +78,68 @@ html {
   width:15%;
   right:2%;
   top:2%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #129cb7;
+  border-radius: 3.5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#content{
+  position: absolute;
+  height:75%;
+  width:80%;
+  top:20%;
+  left:10%;
+  background-color: rgba(0,0,0,0.8);
+  overflow-y:scroll;
+}
+.main{
+  position:relative;
+  text-align:center;
+  top:30px;
+  height:200px;
+  width:100%;
+  margin-bottom:45px;
+}
+.thelabel{
+  height:auto;
+  color:white;
+  font-size: 26px;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+.thelabel a{
+  color:white;
+}
+.thelabel a:visited{
+  color:white;
+}
+.thelabel a:hover{
+  color:rgb(149, 149, 240);
+}
+.theImg{
+height: 150px;
+top:40px;
+left:0;
+width:100%;
+position:absolute;
 }
