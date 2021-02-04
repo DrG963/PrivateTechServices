@@ -1,5 +1,5 @@
 html {
-  background: url("./pics/aboutBack.jpg") no-repeat center center fixed;
+  /* background: url("./pics/mellowDark2.jpg") no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7,14 +7,24 @@ html {
   height: 100%;
   overflow: hidden;
   z-index:-5;
+  background-color:black;
+}
+#particles-js{
+  position: absolute;
+  height:100%;
+  width:100%;
+  left:0px;
+  top:0px;
+  z-index:-4;
+  background-color: black;
 }
 #container{
   position: absolute;
   width:70%;
-  height:50%;
-  top:25%;
+  height:90%;
+  top:5%;
   left:15%;
-  background-color: rgb(0,0,0,0.95);
+  /* background-color: rgb(0,0,0,0.95); */
   color:white;
   font-size: 20px;
   line-height: 20px;
@@ -23,30 +33,74 @@ html {
   overflow-y: scroll;
 }
 #container a{
-  color:rgb(44, 168, 168);
+  color:rgb(3, 61, 61);
 }
 #container a:visited{
-  color:rgb(44, 168, 168);
+  color:rgb(71, 45, 6);
 }
 #container a:hover{
-  color:rgb(163, 10, 104);
+  color:rgb(97, 2, 26);
 }
-#text{
-    padding: 15px;
-    font-family: 'Josefin Sans', sans-serif;
-    line-height: 22px;
-    font-size: 18px;
-    text-align: left;
-    margin-top:auto;
-    margin-bottom: auto;
-    display:block;
-    height:auto;
-    max-height:95%;
-    position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
+#container h2{
+  padding:15px;
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  max-width:80%;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  height:auto;
+  text-align: center;
+  font-weight:900;
+  color:white;
+  font-size:22px;
+  line-height:25px;
+  letter-spacing: 1.5px;
+  border-radius: 20px;
+  border: 3px solid rgb(12, 223, 160);
+  background-color: rgba(0,0,0,0.5);
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.text{
+  padding:15px;
+  margin-top:20px;
+  margin-bottom:20px;
+  background-color: rgba(255,255,255,0.8);
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  max-width:80%;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  height: auto;
+  text-align: left;
+  font-weight:700;
+  color:black;
+  font-size:20px;
+  line-height:25px;
+  letter-spacing: 1.5px;
+  border-radius: 20px;
+  border: 3px solid rgb(12, 223, 160);
+}
+a.link_button{
+  position: relative;
+  border: 3px solid rgb(12, 223, 160);
+  width: 60%;
+  height: auto;
+  max-width:80%;
+  padding:20px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  color:white!important;
+  font-weight:700;
+  border-radius: 20px;
+  background-image: radial-gradient( black ,rgb(10,40,20) );
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing:1.3px;
+    text-decoration: none;
 }
 .imgGood img{
   position: absolute;
@@ -65,8 +119,8 @@ html {
   top:35%;
   z-index: -3;
   border-radius:12px;
-  background-color:black;
-  border:3px solid rgb(163, 10, 104);
+  background-image:radial-gradient( black ,rgb(10,40,20) );
+  border: 3px solid rgb(12, 223, 160);
 }
 #homeButton p{
   position: absolute;
@@ -86,8 +140,8 @@ html {
   top:35%;
   z-index: -3;
   border-radius:12px;
-  background-color:black;
-  border:3px solid rgb(163, 10, 104);
+  background-image:radial-gradient( black ,rgb(10,40,20) );
+  border: 3px solid rgb(12, 223, 160);
 }
 #servicesButton p{
   position: absolute;
@@ -118,7 +172,7 @@ html {
   }
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  display:none;
 }
 
 ::-webkit-scrollbar-thumb {

@@ -1,6 +1,6 @@
 
 html {
-  background: url("./pics/techBack.jpg") no-repeat center center fixed;
+ /* background: url("./pics/techBack.jpg") no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,6 +8,16 @@ html {
   height: 100%;
   overflow: hidden;
   z-index:-5;
+  background-color:black;
+}
+#particles-js{
+  position: absolute;
+  height:100%;
+  width:100%;
+  left:0px;
+  top:0px;
+  z-index:-4;
+  background-color: black;
 }
 #mainMenu{
   position: absolute;

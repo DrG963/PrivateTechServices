@@ -1,5 +1,5 @@
 html {
-  background: url("./pics/newBack.jpg") no-repeat center center fixed;
+  /* background: url("./pics/newBack.jpg") no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7,6 +7,15 @@ html {
   height: 100%;
   overflow: hidden;
   z-index:-5;
+}
+#particles-js{
+  position: absolute;
+  height:100%;
+  width:100%;
+  left:0px;
+  top:0px;
+  z-index:-4;
+  background-color: black;
 }
 h1{
   position: relative;
@@ -82,7 +91,7 @@ h1{
 
 /* width */
 ::-webkit-scrollbar {
-  width: 7px;
+  display:none;
 }
 
 /* Track */
@@ -107,7 +116,7 @@ h1{
   width:80%;
   top:20%;
   left:10%;
-  background-color: rgba(0,0,0,0.8);
+  /* background-color: rgba(0,0,0,0.8); */
   overflow-y:scroll;
 }
 .main{
@@ -129,6 +138,8 @@ h1{
 }
 .thelabel a{
   color:white;
+  padding:10px;
+  background-color:rgba(0,0,0,0.6);
 }
 .thelabel a:visited{
   color:white;
@@ -138,7 +149,7 @@ h1{
 }
 .theImg{
 height: 150px;
-top:40px;
+top:50px;
 left:0;
 width:100%;
 position:absolute;

@@ -1,12 +1,22 @@
 html {
-  background: url("./pics/contactBack.jpg") no-repeat center center fixed;
+  /* background: url("./pics/contactBack.jpg") no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
+  background-color:black;
   overflow: hidden;
   z-index:-5;
+}
+#particles-js{
+  position: absolute;
+  height:100%;
+  width:100%;
+  left:0px;
+  top:0px;
+  z-index:-4;
+  background-color: black;
 }
 body{
   position: absolute;

@@ -12,12 +12,11 @@
   gtag('config', 'UA-131180707-3');
 </script>
 
-  <meta name="description" content="Personal services of Prive Tech Services.">
-  <meta name="keywords" content="Private Tech Services, Tech Services, Technology Services, Technology Repair, modification, screen repair, remote pc cleanup, cheaper, better, cheaper and better, tech guy, network setup, network solutions, personal, services">
+  <meta name="description" content="This is the services information page.">
+  <meta name="keywords" content="Private Tech Services, web design, get a website made, hire website guy, pay to get website made, custom websites, get a nice website">
   <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-functions.js"></script>
   <script src="jquery.js" type="text/javascript"></script>
-  <script src="services.js" type="text/javascript"></script>
   <link type="text/css" rel="stylesheet" href="reset.css">
   <link type="text/css" rel="stylesheet" href="services.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
@@ -25,84 +24,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <title>Services</title>
+    <meta property="og:title" content="Private Tech Services" />
+    <meta property="og:url" content="https://privatetechservices.com/" />
+    <meta property="og:image" content="favicon.png" />
+    <meta property="og:description" content="Services - Private Tech Services" />
 </head>
 <body>
-<div id="closeMenu">
-  <img src="pics/close.jpg">
-</div>
-  <div id="center" class="imgGood">
-    <img src="./pics/clickme.png">
-  </div>
-  <div id="menuItem1" class="allCloser imgGood">
-    <img src="./pics/devices.png">
-  </div>
-  <div id="item1Info" class="yesThis">
-<div class="acrosser" id="mobile">Mobile</div>
-<div class="underneath" id="subMobile">
-  <p>I offer the following services for mobile:</p><br>
-<ol>
-  <li>Screen Repair</li>
-  <li>Jailbreak/Root</li>
-</ol>
-</div>
-<div class="acrosser" id="laptop">Laptop</div>
-<div class="underneath" id="subLaptop">
-<p>(Most can be done remotely)<br>Services for laptops:</p><br>
-<ol>
-    <li>Performace Boost</li>
-    <li>Visus/Spyware Removal</li>
-    <li>Deep Clean</li>
-    <li>Drive Replacement</li>
-    <li>Parts Installation</li>
-    <li>Software Restore</li>
-    <li>Screen Replacement</li>
-    <li>Hardware Replacement</li>
-    <li>Content Recovery</li>
-</div>
-<div class="acrosser" id="desktop">Desktop</div>
-<div class="underneath" id="subDesktop">
-<p>(Most can be done remotely)<br>Services for Desktops:</p><br>
-<ol>
-    <li>Performace Boost</li>
-    <li>Visus/Spyware Removal</li>
-    <li>Deep Clean</li>
-    <li>Drive Replacement</li>
-    <li>Parts Installation</li>
-    <li>Software Restore</li>
-    <li>Screen Replacement</li>
-    <li>Hardware Replacement</li>
-    <li>Content Recovery</li>
-</div>
-
-  </div>
-
-  <div id="menuItem2" class="allCloser imgGood">
-    <img src="./pics/web.png">
-  </div>
-  <div id="item2Info" class="yesThis">
-      <div class="acrosser2" id="create">Website Creation</div>
-      <div class="underneath" id="subCreate">
-        I can work with all the major platforms and more. This includes custom code, wordpress, magento, wix, et cetera. Blogs, business websites, and personal websites are all available. Secure payments, shopping carts, live chat, and many more features available. For hosting I can work with private servers or paid services. Nginx, Apache, Windows Server, and FTP/SSH options are no problem.
-      </div>
-      <div class="acrosser2" id="repair">Per Diem Code Repair</div>
-      <div class="underneath" id="subRepair">
-        Got an issue with a site or server you already have? You can hire me to fix it well, and diagnose the root of the problem! Linux, Mac, Windows, remote hosted? No problem! 
-      </div>
-  </div>
-
-
-  <div id="menuItem3" class="allCloser imgGood">
-    <img src="./pics/network.png">
-  </div>
-  <div id="item3Info" class="yesThis">
-<p>Hire me for me for your networking and administration needs. Why? I am certified & experienced (and can work remotely or in person), and reasonable with pricing. This is a full range of network services from setup to advanced issues. I am experienced with Windows, Mac, and Linux machines. Contact me with the email address on the <a href="contact.html">contact page</a>.<br></p>
-  </div>
-
-    <div id="homer">
-      <a href="index.html">
-  <img src="./pics/homePage.png">
-    </a>
+  <div id="particles-js"></div>
+<script src="particles/particles.js"></script>
+<script src="particles/app_services.js"></script>
+  <div id="container">
+    <h1>SERVICES</h1>
+    <p class="text" style="text-align:center;">Bubbles with blue outline can be clicked.</p>
+    <h2 onclick="$('#websiteCreation').slideToggle()">Website Creation</h2>
+    <p id="websiteCreation" class="text">&nbsp;&nbsp;We can work with all the major platforms and languages. If you are looking for an online shop, blog, business website, or personal website, look no further. We comfortably integrate any specific functions or styles, because we are programmers, not drag and drop layout makers. Secure payments, shopping carts, live chat, and many more features are available. Hosting options range from managed instances, to full Linux stacks, and anything in between.</p>
+    <h2 onclick="$('#pcRepair').slideToggle()">Computer Repair</h2>
+    <div id="pcRepair" class="text">
+      <p style="text-align:center;">Services based in FL.<br>Anything marked with a * can be done remotely.</p>
+      <ol class="listStyle">
+        <li>Performace Boost *</li>
+        <li>Visus/Spyware Removal *</li>
+        <li>Deep Clean *</li>
+        <li>Drive Replacement</li>
+        <li>Drive Clone</li>
+        <li>Parts Installation</li>
+        <li>Software Restore *</li>
+        <li>Screen Replacement</li>
+        <li>Hardware Replacement</li>
+        <li>Content Recovery</li>
+    </ol>
     </div>
+    <h2 onclick="$('#managment').slideToggle()">Managment<br>Services</h2>
+    <p id="managment" class="text">&nbsp;&nbsp;Having issues with your web developers? Are things just not the way you want them to be on your website? You can hire us for excellent website and server managment.</p>
+    <a href="about.html" class="link_button">ABOUT US</a>
+    <!-- <a href="contact.html" class="link_button">CONTACT<br>US</a> -->
+  </div><!-- END CONTAINER -->
+  
+    <a href="index.html"><div id="homeButton" class="imgGood">
+      <!--
+  <a href="index.html"><img src="./pics/home.png"></a>
+  -->
+  <p>Home</p>
+      </div></a>
+  
+      <a href="contact.html"><div id="servicesButton" class="imgGood">
+        <!--
+  <a href="services.html"><img src="./pics/serviceButton.png"></a>
+  -->
+  <p>Contact</p>
+        </div></a>
 
+<script src="services.js" type="text/javascript"></script>        
 </body>
 </html>

@@ -1,54 +1,132 @@
 html {
-  background: url("./pics/background2.png") no-repeat center center fixed;
+  /* background: url("./pics/coolSpace.jpg") no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
   overflow: hidden;
+  background-color:black;
   z-index:-5;
 }
-#center{
+#particles-js{
   position: absolute;
-  width:25%;
-  left:37.5%;
-  height:25%;
-  top:37.5%;
+  height:100%;
+  width:100%;
+  left:0px;
+  top:0px;
   z-index:-4;
+  background-color: black;
 }
-#center img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    max-width: 100%;
-    max-height: 100%;
-    z-index: -4;
+#container{
+  position: absolute;
+  width:70%;
+  height:90%;
+  top:5%;
+  left:15%;
+  /* background-color: rgb(0,0,0,0.95); */
+  color:white;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-#menuItem1{
-  position:absolute;
-  width:25%;
-  height:25%;
-  left:10%;
-  top:37.5%;
-
-  z-index: -2;
+#container a{
+  color:rgb(3, 61, 61);
 }
-#menuItem2{
-  position:absolute;
-  width:25%;
-  height:25%;
-  left:65%;
-  top:37.5%;
-  z-index: -2;
+#container a:visited{
+  color:rgb(71, 45, 6);
 }
-#menuItem3{
-  position:absolute;
-  width:25%;
-  height:25%;
-  left:37.5%;
-  top:7.5%;
-  z-index: -2;
+#container a:hover{
+  color:rgb(97, 2, 26);
+}
+#container h2{
+  padding:15px;
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  max-width:80%;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  height:auto;
+  text-align: center;
+  font-weight:900;
+  color:white;
+  font-size:22px;
+  line-height:25px;
+  letter-spacing: 1.5px;
+  border-radius: 20px;
+  border: 3px solid rgb(7, 189, 235);
+  background-color: rgba(0,0,0,0.5);
+  margin-top:20px;
+  margin-bottom:20px;
+}
+#container h1{
+  padding:15px;
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  max-width:80%;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  height:auto;
+  text-align: center;
+  font-weight:900;
+  color:white;
+  font-size:22px;
+  line-height:25px;
+  letter-spacing: 1.5px;
+  border-radius: 20px;
+  border: 3px solid rgb(134, 4, 124);
+  background-color: rgba(0,0,0,0.5);
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.listStyle{
+  list-style-type: circle;
+  position: relative;
+  left:10px;
+}
+.text{
+  padding:15px;
+  margin-top:20px;
+  margin-bottom:20px;
+  background-color: rgba(255,255,255,0.5);
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  max-width:80%;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  height: auto;
+  text-align: left;
+  font-weight:700;
+  color:black;
+  font-size:20px;
+  line-height:25px;
+  letter-spacing: 1.5px;
+  border-radius: 20px;
+  border: 3px solid rgb(134, 4, 124);
+}
+a.link_button{
+  position: relative;
+  border: 3px solid rgb(7, 189, 235);
+  width: 60%;
+  height: auto;
+  max-width:80%;
+  padding:20px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  color:white!important;
+  font-weight:700;
+  border-radius: 20px;
+  background-image: radial-gradient( black ,rgb(34, 0, 20) );
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing:1.3px;
+    text-decoration: none;
 }
 .imgGood img{
   position: absolute;
@@ -59,44 +137,68 @@ html {
   max-height: 100%;
   z-index: -3;
 }
-#homer{
+#homeButton{
   position: absolute;
-  z-index: -4;
-  width:25%;
-  height:20%;
-  bottom:7.5%;
-  left:37.5%;
+  width:13%;
+  left:1%;
+  height:30%;
+  top:35%;
+  z-index: -3;
+  border-radius:12px;
+  background-color:black;
+  border: 3px solid rgb(7, 189, 235);
 }
-#homer img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    max-width: 100%;
-    max-height: 100%;
-    z-index: -4;
-}
-#item3Info, #item1Info, #item2Info{
+#homeButton p{
   position: absolute;
-  width:50%;
-  height:50%;
-  background-color: rgb(255,255,255);
-  left:25%;
-  top:25%;
-  z-index:-1;
-  padding:10px;
-  text-align: center;
-  padding-top: 15px;
-  font-size: 22px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  line-height: 22px;
-  outline: 2px dashed black;
-  outline-offset: -5px;
-  font-family: 'Josefin Sans', sans-serif;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color:white;
+        letter-spacing:1.5px;
+        font-weight:750;
+}
+#servicesButton{
+  position: absolute;
+  width: 13%;
+  left:86%;
+  height:30%;
+  top:35%;
+  z-index: -3;
+  border-radius:12px;
+  background-color:black;
+  border: 3px solid rgb(7, 189, 235);
+}
+#servicesButton p{
+  position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color:white;
+        letter-spacing:1.5px;
+        font-weight:750;
+}
+@media only screen and (max-width: 600px) {
+  #servicesButton p{
+    width: 15px;
+    word-wrap: break-word;
+    height:auto;
+    max-height:100%;
+    text-align: center;
+    font-size:18px;
+  }
+  #homeButton p{
+    width: 15px;
+    word-wrap: break-word;
+    height:auto;
+    max-height:100%;
+    text-align: center;
+    font-size:18px;
+  }
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  display:none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -107,70 +209,4 @@ html {
 ::-webkit-scrollbar-track {
   background: #ddd;
   border-radius: 20px;
-}
-.acrosser{
-  position: relative;
-  width:80%;
-  left:10%;
-  height:30px;
-  padding-top:3px;
-  top:10px;
-  background-color:black;
-  color:white;
-  line-height:28px;
-  font-size: 24px;
-  margin-top:10px;
-  vertical-align: middle;
-}
-.acrosser2{
-  position: relative;
-  width:80%;
-  left:10%;
-  height:60px;
-  padding-top:3px;
-  top:10px;
-  background-color:black;
-  color:white;
-  line-height:28px;
-  font-size: 24px;
-  margin-top:10px;
-  vertical-align: middle;
-}
-.acrosser:hover{
-  background-color:rgb(2, 164, 175);
-  color:black;
-  cursor:pointer;
-}
-.underneath{
-  top:12px;
-  display:none;
-  position: relative;
-  height:auto;
-  padding:7px;
-  width:80%;
-  left:10%;
-}
-.underneath ol{
-  list-style-type: circle;
-}
-.underneath li{
-  margin-top:7px;
-}
-.underneath p{
-  text-align:center;
-  font-weight: 700;
-  letter-spacing:1.3px;
-  font-size:20px;
-}
-#closeMenu{
-  position: absolute;
-  width:40px;
-  height:40px;
-  right:45px;
-  top:15px;
-  display:none;
-}
-#closeMenu img{
-  max-width: 100%;
-  max-height: 100%;
 }
